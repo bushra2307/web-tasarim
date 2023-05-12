@@ -1,0 +1,131 @@
+body {
+    overflow: hidden;
+}
+h1 {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #626262;
+}
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    color: #626262;
+}
+.outer-container {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #f9f9f9;
+}
+.inner-container {
+    width: 25%;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: #ffffff;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3); /* Add smooth shadow effect */
+}
+
+.row {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    filter: blur(0.1px);
+  -webkit-filter: blur(0.1px);
+}
+.sign-in{
+    color: #3b0f88;
+    font-weight: bold;
+
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    height: 48px;
+    width: 80%;
+    background-color: #efefef;
+    border: none; /* Remove border */
+    border-radius: 255px; /* Add border radius */
+    padding-left: 2vh;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #626262;
+    filter: blur(0.1px);
+  -webkit-filter: blur(0.1px);
+    
+}
+input[type="text"]:focus,
+input[type="password"],
+textarea:focus {
+  outline: none; /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.3); /* Add smoother shadow on focus */
+}
+
+.icons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+a {
+    text-decoration: none;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #626262;
+}
+.image-container {
+    width: 50px;
+    height: inherit;
+}
+
+.icon {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.btn {
+    display: inline-block;
+    border: none;
+    background-color: transparent;
+    padding: 0;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 50%;
+}
+.submit-button {
+    height: 48px;
+    width: 80%;
+    border: none; /* Remove border */
+    border-radius: 255px; /* Add border radius */
+    padding-left: 2vh;
+    background: hsla(291, 85%, 70%, 1);
+    background: linear-gradient(
+        90deg,
+        hsla(291, 85%, 70%, 1) 0%,
+        hsla(284, 90%, 65%, 1) 30%
+    );
+    background: -moz-linear-gradient(
+        90deg,
+        hsla(291, 85%, 70%, 1) 0%,
+        hsla(284, 90%, 65%, 1) 30%
+    );
+    background: -webkit-linear-gradient(
+        90deg,
+        hsla(291, 85%, 70%, 1) 0%,
+        hsla(284, 90%, 65%, 1) 30%
+    );
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#DF70F3", endColorstr="#CC57F6", GradientType=1 );
+    font-family: Arial, Helvetica, sans-serif;
+    font-size:20px;
+    color: #FFFFFF;
+    outline: none; /* Remove default outline */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add smoother shadow on focus */
+    filter: blur(0.6px);
+  -webkit-filter: blur(0.6px);
+  cursor: pointer; /* Add classic clickable cursor */
+}
+
+.submit-button:hover {
+    cursor: pointer; /* Change cursor when hovering */
+  }
